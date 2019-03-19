@@ -7,19 +7,29 @@
 //  throw new Error('convierteEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
+function convierteEurosEnPesetas(euros) {
+    if (typeof euros !== 'number'){
+        throw new Error('convierteEurosEnPesetas debe recibir un number');
+    }
+    if (euros === 1) {
+        return 168;
+    } else {
+        return euros * 168;
+    }
 
+}
 // Hasta aquí
 
 
 // TEST 1
-if (typeof convierteEurosEnPesetas === 'function' ) {
+if (typeof convierteEurosEnPesetas === 'function') {
     console.log('apruebas:  convierteEurosEnPesetas es una función');
 } else {
     console.log('suspendes:  convierteEurosEnPesetas NO es una función');
 }
 
 // TEST 2
-if ( convierteEurosEnPesetas(2) === 336) {
+if (convierteEurosEnPesetas(2) === 336) {
     console.log('apruebas:  2 euros son 336');
 } else {
     console.log('suspendes');
@@ -38,8 +48,8 @@ try {
     convierteEurosEnPesetas();
     convierteEurosEnPesetas('1');
     console.log('suspendes: convierteEurosEnPesetas debe lanzar un error si no recibe un número');
-    
+
 } catch (error) {
     console.log('apruebas');
-        
+
 }

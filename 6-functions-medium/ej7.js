@@ -10,11 +10,13 @@
 // Ha de pasar los test adjuntados.
 
 let sumaDesdeHasta = (desde, hasta) => {
-    let sumatorio = 0;
-    // Aquí tu código.  Desde aquí:
-
-    // Hasta aquí.
-    return sumatorio;
+  let sumatorio = 0;
+  // Aquí tu código.  Desde aquí:
+  for (var i = desde; i <= hasta; i++) {
+    sumatorio += i;
+  }
+  // Hasta aquí.
+  return sumatorio;
 }
 
 

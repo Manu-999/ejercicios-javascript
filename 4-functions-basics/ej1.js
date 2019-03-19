@@ -7,18 +7,22 @@
 // Ha de pasar los test adjuntados.
 
 let duplicaNumero = (numero) => {
-    // Aquí tu código.  Desde aquí:
-   
+  // Aquí tu código.  Desde aquí:
+  if (typeof numero === 'number') {
+    return numero * 2;
+  } else {
+    return 'Debo ser ejecutada con un numero';
+  }
 
 
-    // Hasta aquí.
+  // Hasta aquí.
 }
 
 let test = require('../test.js');
 
 //  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 
 // comprueba si: duplicaNumero(1) === 2 
-// console.log(duplicaNumero(5) === 10);
+//console.log(duplicaNumero(5) === 10);
 
 test(duplicaNumero, [1], 2);
 test(duplicaNumero, [0], 0);

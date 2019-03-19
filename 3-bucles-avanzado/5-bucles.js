@@ -18,6 +18,15 @@ console.log('El array original es:  arr =', arr);
 
 // Aquí tu código
 
+var total;
+
+for (var i of arr) {
+    arr.reduce(function (anterior, actual) {
+        return total = anterior + actual;
+    })
+}
+
+
 
 // Hasta aquí
 console.log('El total nuevo es: ', total);

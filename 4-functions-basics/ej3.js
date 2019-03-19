@@ -9,9 +9,16 @@
 // Ha de pasar los test adjuntados.
 
 let caracterInicial = (texto) => {
-    // Aquí tu código.  Desde aquí:
-    
-    // Hasta aquí.
+  // Aquí tu código.  Desde aquí:
+  if (texto == '') {
+    return 'Debo ser ejecutada con un string no vacío';
+  }
+  if (typeof texto === 'string') {
+    return texto.charAt(0);
+  } else {
+    return 'Debo ser ejecutada con un string';
+  }
+  // Hasta aquí.
 }
 
 

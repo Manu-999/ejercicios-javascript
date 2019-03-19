@@ -9,11 +9,17 @@
 // Ha de pasar los test adjuntados.
 
 let ultimoCaracter = (texto) => {
-    // Aquí tu código.  Desde aquí:
-  
+  // Aquí tu código.  Desde aquí:
+  if (texto == '') {
+    return 'Debo ser ejecutada con un string no vacío';
+  }
+  if (typeof texto === 'string') {
+    return texto.slice(-1);
+  } else {
+    return 'Debo ser ejecutada con un string';
+  }
 
-
-    // Hasta aquí.
+  // Hasta aquí.
 }
 
 
